@@ -7,6 +7,8 @@ const app = express();
 app.use(bodyParser.json())
 
 app.get('/api/test', controller.test)
+app.post('/api/primaryweapon', controller.createPrimaryWeapon)
+app.post('/api/secondaryweapon', controller.createSecondaryWeapon)
 
 
 
